@@ -1,3 +1,8 @@
 @import '~bootstrap/scss/bootstrap';
 @import '~@fortawesome/fontawesome-free/css/all.css';
 @import './varibles.scss';
+
+.my_width{
+    width: 65%;
+    margin: 0 auto;
+}

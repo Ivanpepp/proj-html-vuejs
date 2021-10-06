@@ -1,15 +1,24 @@
 <template>
-  <div>
+  <main>
+      <!-- Jumbo section -->
+      <Jumbo />
       
-  </div>
+      <!--/ Jumbo section -->
+
+
+  </main>
 </template>
 
 <script>
+import Jumbo from './Jumbo.vue'
 export default {
-
+  name: 'Main',
+  components:{
+    Jumbo,
+  }
 }
 </script>
 
-<style>
+<style scoped lang='scss'>
 
 </style>

@@ -39,7 +39,7 @@
                         <div class="ms-4 d-flex align-items-center flex-grow-1">
                             <i class="fas fa-bars"></i>
                             <span class="ms-1">CATEGORY</span>
-                            <input type="text" class="ms-2 form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+                            <input type="text" class="ms-2 form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" placeholder="Search courses">
                             <button class="btn  rounded-0"><i class="fas fa-search text-white fs-6"></i></button>
                         </div>   
                         <div class="ms-4 d-flex align-items-center ">
@@ -60,7 +60,7 @@
         </section>
 
       <!--/ Bottom nav secrion -->
-
+    
   </header>
 </template>
 
