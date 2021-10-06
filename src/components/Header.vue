@@ -17,11 +17,11 @@
                                 </a>
                             </li>
                         <!-- Social Section -->
-                            <div class="ms-3  d-flex justify-content-end">
+                            <ul class="d-flex justify-content-end ps-3">
                                 <li v-for="(icon,index) in Social" :key="index">
-                                    <a class="ps-3" href="#"><i class="social-icon" :class="socialGenerator(icon)"></i></a>
+                                    <a class="ps-2" href="#"><i class="social-icon" :class="socialGenerator(icon)"></i></a>
                                 </li>
-                            </div>
+                            </ul>
                           
                         </ul>
                     </div>
@@ -29,6 +29,38 @@
             </div>
         </section>
       <!-- Top nav section -->
+
+      <!-- Bottom nav secrion -->
+        <section id="bottom-nav" class="pt-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 d-flex  align-items-center ">
+                        <img class="main-logo" src="../assets/img/MasterStudy_logo.svg" alt="MasterStudy main logo">
+                        <div class="ms-4 d-flex align-items-center flex-grow-1">
+                            <i class="fas fa-bars"></i>
+                            <span class="ms-1">CATEGORY</span>
+                            <input type="text" class="ms-2 form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+                            <button class="btn  rounded-0"><i class="fas fa-search text-white fs-6"></i></button>
+                        </div>   
+                        <div class="ms-4 d-flex align-items-center ">
+                            <i class="my_blue fas fa-bullhorn"></i>
+                            <span class="ms-1">Become an instructor</span>
+                            <i class="my_blue ms-4 fas fa-briefcase"></i>
+                            <span class="ms-1">For Enterprise</span>
+                        </div>
+                        <div class="my_blue d-flex align-items-center ">
+                            <i class="ms-4 far fa-user"></i>
+                            <span class="ms-1">Log in</span>
+                            <button class=" mx-4 btn rounded-pill text-white px-4 py-2">SIGN UP</button>
+                            <i class="fs-5 far fa-bookmark"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+      <!--/ Bottom nav secrion -->
+
   </header>
 </template>
 
@@ -55,9 +87,10 @@ export default {
     header{
         #top-nav{
             border-bottom: .7px solid #a3b4c3;
-            font-size: 0.8rem;
+            font-size: 0.7rem;
             color: #97a9ba;
-            line-height: 50px;
+            line-height: 40px;
+            
             .fas.fa-angle-down{
                 cursor: pointer;
                  &:hover{
@@ -92,6 +125,28 @@ export default {
                     color: #696b7a
                 }
             }
-        }   
+        } 
+        .my_blue{
+            color: #1a5eca;;
+        }  
+        #bottom-nav{
+            color: #7f8e9c;
+           font-size: .8rem;
+          
+           .fas.fa-bars{
+               font-size: .6rem;
+           }
+           input{
+               background-color: #f0f2f5;
+               
+           }
+           button{
+               background-color: #1a5eca;
+               border-color: #1a5eca;
+           }
+           button.rounded-pill{
+               font-size: .8rem;
+           }
+        }
     }
 </style>
