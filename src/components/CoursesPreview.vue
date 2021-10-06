@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="mb-5">
         <div class="container">
             <div class="row my_width">
                 <div class="col-8">

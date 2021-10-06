@@ -44,8 +44,8 @@ export default {
             }
             
             button{
-                background-color: #1a5eca;
-               border-color: #1a5eca;
+                background-color: $primaryBlue;
+               border-color: $primaryBlue;
                text-transform: uppercase;
                font-weight: bold;
             }
