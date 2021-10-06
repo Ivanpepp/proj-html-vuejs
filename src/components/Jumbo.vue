@@ -3,10 +3,13 @@
   <section id="jumbo-section" class="mt-5" >
       <div class="container ">
           <div class="row my_width pt-5">
-              <div class="col-6 d-flex flex-column justify-content-center">
-                  <h1 class="mb-4">Start Investing in You</h1>
-                  <p class="mb-4">With over 1200 courses in 18 subject, you're guaranteed to find something tht's right for you.</p>
-                  <button class="btn rounded-pill text-white">join for free</button>
+              <div class="col-6 d-flex  align-items-center">
+                    <div class="text-start">
+                        <h1 class="mb-4">Start Investing in You</h1>
+                        <p class="mb-4">With over 1200 courses in 18 subject, you're guaranteed to find something tht's right for you.</p>
+                        <button class="btn rounded-pill text-white py-2 px-3">join for free</button>
+                    </div>
+                    
               </div>
               <div class="col-6">
                   
@@ -29,13 +32,24 @@ export default {
 </script>
 
 <style scoped lang='scss'>
+@import '../style/varibles.scss';
+
     #jumbo-section{
+        font-family: $jumboFont;
+        color: $jumboColor;
         .col-6{
             height: 500px;
+            h1{
+                font-size: 2.8rem;
+            }
+            
             button{
                 background-color: #1a5eca;
                border-color: #1a5eca;
+               text-transform: uppercase;
+               font-weight: bold;
             }
+
             .book-1{
             
             position: relative;
