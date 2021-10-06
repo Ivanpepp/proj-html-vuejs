@@ -2,6 +2,9 @@
 @import '~@fortawesome/fontawesome-free/css/all.css';
 @import './varibles.scss';
 
+body{
+    font-family: $bodyFont;
+}
 .my_width{
     width: 65%;
     margin: 0 auto;

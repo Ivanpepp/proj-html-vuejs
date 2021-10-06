@@ -84,6 +84,8 @@ export default {
 </script>
 
 <style scoped lang='scss'>
+@import '../style/varibles.scss';
+
     header{
         #top-nav{
             border-bottom: .7px solid #a3b4c3;
@@ -127,7 +129,7 @@ export default {
             }
         } 
         .my_blue{
-            color: #1a5eca;;
+            color: $primaryBlue;
         }  
         #bottom-nav{
             color: #7f8e9c;
@@ -141,8 +143,8 @@ export default {
                
            }
            button{
-               background-color: #1a5eca;
-               border-color: #1a5eca;
+               background-color: $primaryBlue;
+               border-color: $primaryBlue;
            }
            button.rounded-pill{
                font-size: .8rem;
