@@ -5,7 +5,11 @@
       <!--/ Jumbo section -->
 
       <!-- Card section -->
-      <Card  :cardBanner='cardBanner'/>
+      <div  class="container pt-5 mb-5" >
+          <div class="row justify-content-between my_width">
+            <Card  v-for="(card,index) in cardBanner" :key="index" :title='card.title' :paragraph='card.paragraph' :card='card'/>
+          </div>
+      </div>
       <!-- Card section -->
 
       <!-- CoursesPreview section -->

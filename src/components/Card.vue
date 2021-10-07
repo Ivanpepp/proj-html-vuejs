@@ -1,21 +1,23 @@
 <template>
-  <div  class="container pt-5 mb-5" >
-      <div class="row justify-content-between my_width">
-            <div v-for="(card,index) in cardBanner" :key="index" class="col">
+            <div  class="col">
                 <i class="card-logo mb-4" :class="cardLogoGenerator(card)"></i>
-                <h4 class="mb-4">{{card.title}}</h4>
-                <p>{{card.paragraph}}</p>
+                <h4 class="mb-4">{{title}}</h4>
+                <p>{{paragraph}}</p>
             </div>
-      </div>  
-  </div>
 </template>
 
 <script>
 export default {
     name: 'Card',
     props:{
-        cardBanner:{
-            type: Array,
+        title:{
+            type: String,
+        },
+        paragraph:{
+            type: String,
+        },
+        card:{
+            type: Object
         }
     },
     methods:{
@@ -29,14 +31,22 @@ export default {
 <style scoped lang='scss'>
 @import '../style/varibles.scss';
 
-    h4{
-        font-size: 1.1rem;
+    .col{
+        background-color: #f2f6fb;
+        padding: 20px;
+        &:nth-child(2){
+            margin: 0px 20px;
+        }
+        h4{
+            font-size: 1rem;
+        }
+        p{
+            font-size: .6rem;
+        }
+        .card-logo{
+            color: $primaryBlue;
+            font-size: 3rem;
+        }
     }
-    p{
-        font-size: .7rem;
-    }
-    .card-logo{
-        color: $primaryBlue;
-        font-size: 3.5rem;
-    }
+        
 </style>

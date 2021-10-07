@@ -30,7 +30,8 @@ export default {
     font-family: $jumboFont;
     background-image: url('../assets/img/Untitled-1-1-1-1-1.png');
     background-size: cover;
-    height: 500px;
+    background-position: left;
+    height: 600px;
    
   
     .col-6{
