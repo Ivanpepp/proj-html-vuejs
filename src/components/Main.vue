@@ -22,8 +22,8 @@
 
       <!-- Recent Courses section -->
 
-      <div id="recent-courses-section" class="container pt-5">
-        <div class="row">
+      <div id="recent-courses-section" class="container pt-5 mb-5 ">
+        <div class="row justify-content-center">
           <h2 class="text-center fs-1 mb-5">Recent courses</h2>
           <nav class="mb-5">
             <ul class="d-flex justify-content-center">
@@ -32,7 +32,11 @@
               </li>
             </ul>
           </nav>
-          <RecentCourses  />
+          <RecentCourses v-for="(card,index) in cardRecentCourses" :key="index" :card='card' />
+          <div class="text-center pt-4">
+            <button id="my_button" class="btn text-white  rounded-pill py-2 px-4">show all</button>
+          </div>
+          
         </div>
       </div>
 
@@ -79,25 +83,35 @@ export default {
 
 <style scoped lang='scss'>
 @import '../style/varibles.scss';
-  ul{
-    list-style-type: none;
-    a{
-      text-decoration: none;
-      color: $primaryBlue;
-      padding: 10px 20px;
-      transition: .2s cubic-bezier(0.165, 0.84, 0.44, 1);
-       &:hover{
-        background-color: #f0f4fa;
-        color: #bfc1c3;
-        border-radius: 20px;
 
+    #recent-courses-section{
+       ul{
+        list-style-type: none;
+        a{
+          text-decoration: none;
+          color: $primaryBlue;
+          padding: 10px 20px;
+          transition: .2s cubic-bezier(0.165, 0.84, 0.44, 1);
+          &:hover{
+            background-color: #f0f4fa;
+            color: #bfc1c3;
+            border-radius: 20px;
+
+        }
+        }
+        .active{
+          background-color: #f0f4fa;
+          color: #bfc1c3;  
+          border-radius: 20px;
+        }
+      
+      }
+         button{
+              background-color: $primaryBlue;
+               border-color: $primaryBlue;
+               text-transform: uppercase;
+               font-weight: bold;
+            }
     }
-    }
-    .active{
-      background-color: #f0f4fa;
-      color: #bfc1c3;  
-      border-radius: 20px;
-    }
-   
-  }
+     
 </style>
