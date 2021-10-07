@@ -31,6 +31,8 @@ export default {
     background-image: url('../assets/img/Untitled-1-1-1-1-1.png');
     background-position:center;
     height: 600px;
+    max-width: 1450px;
+    margin: 0 auto;
     .col-6{
         height: 600px;
          h1{

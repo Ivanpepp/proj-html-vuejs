@@ -1,4 +1,4 @@
-<template>
+<template >
   <div class="col-2 p-2">
     <div class="card-wrapper ">
         <div class="image-course">
