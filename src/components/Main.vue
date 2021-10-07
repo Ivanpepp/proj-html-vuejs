@@ -53,7 +53,57 @@
       <!-- Proud section -->
       <Proud />
       <!-- Proud section -->
+      <!-- popular section -->
 
+      <section id="popular-section">
+        <div  class="container">
+            <div class="row justify-content-center pt-5">
+              <h2 class="text-center pt-5 mb-3">Popular Courses</h2>
+              <p class="text-center mb-4">Discover our most popular courses for self learnign</p>
+              <Popular class="mb-5"  v-for="(card,index) in cardRecentCourses" :key='index' :card='card'/>
+              <div class="page-slider mb-5">
+                <i class=" fas fa-angle-left"></i>
+                <i class=" fas fa-angle-right"></i>
+              </div>
+            </div>
+        </div>
+      </section>
+      <!--/ popular section -->
+
+      <!-- cta section -->
+      <section id="cta">
+       <div class="container p-3">
+            <div class="row justify-content-between p-5">
+              <div class="col">
+                <div class="d-flex pe-3 box">
+                  <img src="../assets/img/image_box_1-221x231.png" alt="Istructor image">
+                  <div >
+                    <h2 class="mb-3">Become an istructor</h2>
+                    <p class="mb-3">Teach what you love. MasterStudy gives you the toolsto create a course.</p>
+                    <button class="btn rounded-pill">start teaching</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="d-flex ps-3 box">
+                  <img src="../assets/img/image_box_2-234x231.png" alt="Istructor image">
+                  <div >
+                    <h2 class="mb-3">Setup For Business</h2>
+                    <p class="mb-3">Get unlmited access to 2.500 of Udemy's top courses for your team.</p>
+                    <button class="btn rounded-pill">doing business</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>      
+      <!-- cta section -->
+
+      <!-- Footer Jumv -->
+      <section id="footer-jumbo">
+
+      </section>
+      <!-- Footer Jumv -->
   </main>
 </template>
 
@@ -65,6 +115,7 @@ import CoursesPreview from './CoursesPreview.vue'
 import MidJumbo from './MidJumbo.vue'
 import RecentCourses from './RecentCourses.vue'
 import Proud from './Proud.vue'
+import Popular from './Popular.vue'
 /* DATA */
 import cardBanner from '../data/card'
 import navRecentCourses from '../data/nav-recent-courses'
@@ -86,6 +137,7 @@ export default {
     MidJumbo,
     RecentCourses,
     Proud,
+    Popular
     
   },
   methods:{
@@ -149,5 +201,48 @@ export default {
         
       }
     }
-     
+    #popular-section{
+      background-color: #f0f4fa;
+      h2,p{
+        font-family: $jumboFont;
+      }
+      p{
+        color: rgb(182, 182, 182)
+      }
+      .page-slider{
+        color: lightgray;
+        text-align: center;
+        font-size: 1.2rem;
+        .fas{
+          border: 1px solid lightgray;
+          background-color: white;
+          width: 40px;
+          height: 40px;
+          line-height: 40px;
+        }
+      }
+    }
+    #cta{
+      .box{
+        border: 1px solid lightgray;
+        align-items: center;
+        padding: 30px 0;
+        img{
+          padding: 30px;
+          width: 200px;
+        }
+        button{
+          background-color: $primaryBlue;
+          border-color: $primaryBlue;
+          text-transform: uppercase;
+          color: white;
+        }
+        p{
+          color: rgb(180, 178, 178);
+        }
+      }
+    }
+    #footer-jumbo{
+      background-image: url('../assets/img/brooke-cagle-224821-unsplash-1-1920x700.jpg');
+    }
 </style>

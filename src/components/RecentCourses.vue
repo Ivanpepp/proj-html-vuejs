@@ -1,5 +1,5 @@
 <template >
-  <div class="col-2 p-2">
+  <div  class="col-2 p-2">
     <div class="card-wrapper ">
         <div class="image-course">
             <img :src="card.img" :alt="card.course" >
@@ -41,7 +41,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss" >
 @import '../style/varibles.scss';
     .image-course{
         position: relative;
@@ -95,6 +95,7 @@ export default {
     }
     .card-wrapper{
         border: 1px solid lightgray;
+        background-color: white;
         transition: .3s cubic-bezier(0.165, 0.84, 0.44, 1);
         &:hover{
           border: 1px solid orange;    

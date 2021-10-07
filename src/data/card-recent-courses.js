@@ -39,8 +39,7 @@ export default[
         new: false,
         hot:false,
         special:true,
-
-popular:false,    },
+        popular:false,    },
     {
         img:'https://via.placeholder.com/200x150',
         course:'Apache',
