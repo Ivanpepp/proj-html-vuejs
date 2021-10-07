@@ -32,7 +32,7 @@ export default {
     background-position:center;
     height: 600px;
     .col-6{
-        height: 500px;
+        height: 600px;
          h1{
                 font-size: 2.8rem;
             }
