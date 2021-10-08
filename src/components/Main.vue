@@ -1,5 +1,8 @@
 <template>
-  <main>
+  <main >
+    
+
+    
       <!-- Jumbo section -->
       <Jumbo />
       <!--/ Jumbo section -->
@@ -114,7 +117,9 @@
        </div>
        
       </section>
+     
       <!-- Footer main Jumbo -->
+      
   </main>
 </template>
 
@@ -133,6 +138,11 @@ import navRecentCourses from '../data/nav-recent-courses'
 import cardRecentCourses from '../data/card-recent-courses'
 export default {
   name: 'Main',
+  props:{
+    needle:{
+      type: String
+    }
+  },
   data:function(){
     return{
       cardBanner,
@@ -154,8 +164,18 @@ export default {
   methods:{
     isActive: function(index){
       this.indexCounter = index
-    }
-  }
+    },
+    
+  },
+   computed:{
+        filterCourse: function(){
+            return this.cardRecentCourses.filter((element)=>{  
+
+               return element.course.toLowerCase().trim().match(this.needle.toLowerCase())
+               
+        })
+        },
+ }
 }
 </script>
 

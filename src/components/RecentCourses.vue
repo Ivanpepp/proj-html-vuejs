@@ -97,6 +97,7 @@ export default {
         border: 1px solid lightgray;
         background-color: white;
         transition: .3s cubic-bezier(0.165, 0.84, 0.44, 1);
+        height: 300px;
         &:hover{
           border: 1px solid orange; 
           transform: scale(1.1);   

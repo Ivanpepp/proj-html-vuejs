@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <Header />
-    <Main />
+    <Header @search='searchNeedledCourses' />
+    <Main :needle='needle' />
     <Footer />
   </div>
 </template>
@@ -13,10 +13,22 @@ import Footer from './components/Footer.vue'
 
 export default {
   name: 'App',
+  data: function(){
+    return{
+      needle:'',
+      filterCourse:[],
+    }
+  },
   components: {
     Header,
     Main,
     Footer
+  },
+  methods:{
+    searchNeedledCourses: function(needle){
+      this.needle = needle;
+    },
+  
   }
 }
 </script>
