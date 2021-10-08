@@ -98,7 +98,8 @@ export default {
         background-color: white;
         transition: .3s cubic-bezier(0.165, 0.84, 0.44, 1);
         &:hover{
-          border: 1px solid orange;    
+          border: 1px solid orange; 
+          transform: scale(1.1);   
         }
             .line{
             width: 100%;

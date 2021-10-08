@@ -43,6 +43,11 @@ export default {
                border-color: $primaryBlue;
                text-transform: uppercase;
                font-weight: bold;
+               transition: .3s cubic-bezier(0.165, 0.84, 0.44, 1);
+               &:hover{
+                   background-color: blue;
+                   border-color: blue;
+               }
             }
     }
 }

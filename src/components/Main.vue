@@ -193,6 +193,12 @@ export default {
             border-color: $primaryBlue;
             text-transform: uppercase;
             font-weight: bold;
+            transition: .3s cubic-bezier(0.165, 0.84, 0.44, 1);
+               &:hover{
+                   background-color: blue;
+                   border-color: blue;
+                   transform: scale(1.3);
+               }
         }
       .stiker-container{
         position: absolute;
@@ -231,6 +237,15 @@ export default {
           height: 40px;
           line-height: 40px;
         }
+        .fas.fa-angle-left,
+        .fas.fa-angle-right{
+          transition: .3s cubic-bezier(0.165, 0.84, 0.44, 1);
+          &:hover{
+            background-color: #4ed7a8;
+            border-color: #4ed7a8;
+            color: white;
+          }
+        }
       }
     }
     #cta{
@@ -247,6 +262,13 @@ export default {
           border-color: $primaryBlue;
           text-transform: uppercase;
           color: white;
+          transition: .1s cubic-bezier(0.165, 0.84, 0.44, 1);
+               &:hover{
+                   background-color: blue;
+                   border-color: blue;
+                   transform: scale(1.1);
+                   
+               }
         }
         p{
           color: rgb(180, 178, 178);

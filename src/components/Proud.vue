@@ -84,7 +84,7 @@ export default {
         background-color: #f0f4fa;
         font-family: $jumboFont;
         h2{
-            font-size: rem;
+            font-size: 2rem;
         }
         p{
             color: rgb(170, 170, 170);
@@ -98,6 +98,24 @@ export default {
                 font-size: 4rem;
                 
             }
+            h1 {
+                
+                -webkit-animation:spin 15s linear infinite ;
+                -moz-animation:spin 15s linear infinite ;
+                animation:spin 15s linear infinite ;
+                }
+                @-moz-keyframes spin { 
+                    100% { -moz-transform: rotate(360deg); } 
+                }
+                @-webkit-keyframes spin { 
+                    100% { -webkit-transform: rotate(360deg); } 
+                }
+                @keyframes spin { 
+                    100% { 
+                        -webkit-transform: rotate(360deg); 
+                        transform:rotate(360deg); 
+                    } 
+                }
             
             
         }
@@ -109,10 +127,17 @@ export default {
             background-color: $primaryBlue;
             border-color: $primaryBlue;
             color: white;
+            transition: .3s cubic-bezier(0.165, 0.84, 0.44, 1);
+               &:hover{
+                   background-color: blue;
+                   border-color: blue;
+               }
         }
         h4{
             font-size: 1.3rem;
+            
         }
+        
         p{
                     font-size: 0.8rem;
                 }

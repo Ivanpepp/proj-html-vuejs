@@ -145,9 +145,19 @@ export default {
            button{
                background-color: $primaryBlue;
                border-color: $primaryBlue;
+               transition: .3s cubic-bezier(0.165, 0.84, 0.44, 1);
+                &:hover{
+                    background-color: blue;
+                    border-color: blue;
+                }
            }
            button.rounded-pill{
                font-size: .8rem;
+               transition: .3s cubic-bezier(0.165, 0.84, 0.44, 1);
+                &:hover{
+                    background-color: blue;
+                    border-color: blue;
+                }
            }
         }
     }

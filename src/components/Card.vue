@@ -37,11 +37,18 @@ export default {
         &:nth-child(2){
             margin: 0px 20px;
         }
+        transition: .3s cubic-bezier(0.165, 0.84, 0.44, 1);
+        &:hover{
+            transform: scale(1.1);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            border-radius: 30px;
+        }
         h4{
-            font-size: 1rem;
+            font-size: 1.2rem;
         }
         p{
-            font-size: .6rem;
+            font-size: .8rem;
+            color: rgb(151, 149, 149);
         }
         .card-logo{
             color: $primaryBlue;

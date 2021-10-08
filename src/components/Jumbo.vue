@@ -48,6 +48,11 @@ export default {
                border-color: $primaryBlue;
                text-transform: uppercase;
                font-weight: bold;
+               transition: .3s cubic-bezier(0.165, 0.84, 0.44, 1);
+                &:hover{
+                    background-color: blue;
+                    border-color: blue;
+                }
             }
 
             .book-1{
@@ -55,11 +60,43 @@ export default {
             position: relative;
             bottom: 365px;
             left: 370px;
+                -webkit-animation:spin 3s linear  ;
+                -moz-animation:spin 3s linear  ;
+                animation:spin 3s linear  ;
+                }
+                @-moz-keyframes spin { 
+                    100% { -moz-transform: rotate(360deg); } 
+                }
+                @-webkit-keyframes spin { 
+                    100% { -webkit-transform: rotate(360deg); } 
+                }
+                @keyframes spin { 
+                    100% { 
+                        -webkit-transform: rotate(360deg); 
+                        transform:rotate(360deg); 
+                    } 
+                
         }
         .book-2{
             position: relative;
             bottom: 390px;
             left: 220px;
+                -webkit-animation:spin 3s linear  ;
+                -moz-animation:spin 3s linear  ;
+                animation:spin 3s linear  ;
+                }
+                @-moz-keyframes spin { 
+                    100% { -moz-transform: rotate(-360deg); } 
+                }
+                @-webkit-keyframes spin { 
+                    100% { -webkit-transform: rotate(-360deg); } 
+                }
+                @keyframes spin { 
+                    100% { 
+                        -webkit-transform: rotate(-360deg); 
+                        transform:rotate(-360deg); 
+                    } 
+                
         }
         .bubblespeech{
             position: relative;
