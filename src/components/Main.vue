@@ -101,7 +101,17 @@
 
       <!-- Footer Jumv -->
       <section id="footer-jumbo">
-          
+       <div class="container">
+         <div class="row my_width py-5">
+           <div class="col-6 p-5 bg-white">
+             <h4>Come as you are</h4>
+             <p>MasterStudy used is an excellent workshop whether you come as a counselor, advisor, administrator, or facutly member. I am going home empowered. I am looking forward toa ttending the On Course MasterStudy and the MasterStudy Nationale Conference next year and facilittating the use og this excellent retention/student succes course at mu college</p>
+             <h5>Tim Sab</h5>
+             <span>General Developer, Stylemix Themes</span>
+           </div>
+         </div>
+       </div>
+       
       </section>
       <!-- Footer Jumv -->
   </main>
@@ -229,7 +239,7 @@ export default {
         padding: 30px 0;
         img{
           padding: 30px;
-          width: 200px;
+          width: 300px;
         }
         button{
           background-color: $primaryBlue;
@@ -244,5 +254,6 @@ export default {
     }
     #footer-jumbo{
       background-image: url('../assets/img/brooke-cagle-224821-unsplash-1-1920x700.jpg');
+      background-size: cover;
     }
 </style>
