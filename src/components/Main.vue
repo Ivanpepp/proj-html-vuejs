@@ -99,21 +99,22 @@
       </section>      
       <!-- cta section -->
 
-      <!-- Footer Jumv -->
-      <section id="footer-jumbo">
-       <div class="container">
+      <!-- Footer main Jumbo -->
+      <section id="footer-main-jumbo">
+       <div class="container py-3">
          <div class="row my_width py-5">
-           <div class="col-6 p-5 bg-white">
+           <div class="col-7 p-5 bg-white">
              <h4>Come as you are</h4>
-             <p>MasterStudy used is an excellent workshop whether you come as a counselor, advisor, administrator, or facutly member. I am going home empowered. I am looking forward toa ttending the On Course MasterStudy and the MasterStudy Nationale Conference next year and facilittating the use og this excellent retention/student succes course at mu college</p>
-             <h5>Tim Sab</h5>
+             <p class="mb-4">MasterStudy used is an excellent workshop whether you come as a counselor, advisor, administrator, or facutly member. I am going home empowered. I am looking forward toa ttending the On Course MasterStudy and the MasterStudy Nationale Conference next year and facilittating the use og this excellent retention/student succes course at mu college</p>
+             <h5 class="fw-bold m-0">Tim Sab</h5>
              <span>General Developer, Stylemix Themes</span>
+             <i class="fas fa-exclamation-triangle"></i>
            </div>
          </div>
        </div>
        
       </section>
-      <!-- Footer Jumv -->
+      <!-- Footer main Jumbo -->
   </main>
 </template>
 
@@ -252,8 +253,34 @@ export default {
         }
       }
     }
-    #footer-jumbo{
+    #footer-main-jumbo{
       background-image: url('../assets/img/brooke-cagle-224821-unsplash-1-1920x700.jpg');
       background-size: cover;
+      .col-7{
+        position: relative;
+        .fa-exclamation-triangle{
+        position: absolute;
+        top: 50%;
+        right: -30px;
+        transform: translate(-50%);
+        transform: rotate(90deg);
+        color: white;
+        font-size: 2rem;
+        
+      }
+      p{
+          color: rgb(193, 193, 193);
+          font-family: $jumboFont;
+        }
+        h4{
+          font-size: 1.8rem;
+          font-family: $jumboFont;
+
+        }
+      }
+      span{
+        color: rgb(193, 193, 193);
+      }
+      
     }
 </style>
