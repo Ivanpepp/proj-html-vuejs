@@ -72,8 +72,8 @@
 
       <!-- cta section -->
       <section id="cta">
-       <div class="container p-3">
-            <div class="row justify-content-between p-5">
+       <div class="container py-3">
+            <div class="row justify-content-between py-5">
               <div class="col">
                 <div class="d-flex pe-3 box">
                   <img src="../assets/img/image_box_1-221x231.png" alt="Istructor image">
@@ -101,7 +101,7 @@
 
       <!-- Footer Jumv -->
       <section id="footer-jumbo">
-
+          
       </section>
       <!-- Footer Jumv -->
   </main>
